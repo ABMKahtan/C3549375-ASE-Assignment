@@ -67,12 +67,14 @@ namespace C3549375_ASE_Assignment
         {
             g.Clear(Color.White);
             g.DrawRectangle(Pen, valX, valY, penheight, penlength);
+
         }
         //This is for resetting the canvas
         public void Reset()
         {
             g.Clear(Color.White);
             g.DrawRectangle(Pen, 0, 0, penheight, penlength);
+
         }
         //Pen Colours
         public void pColours(Color color)

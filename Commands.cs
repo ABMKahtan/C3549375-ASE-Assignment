@@ -50,6 +50,11 @@ namespace C3549375_ASE_Assignment
             {
                 Canvas.DrawSquare(parameterInts[0]);
             }
+            //This is for the rectangle
+            else if (Command.Equals("rectangle") == true)
+            {
+                Canvas.DrawRectangle(parameterInts[0], parameterInts[1]);
+            }
             //This one is for a Circle
             else if (Command.Equals("circle") == true)
             {
@@ -72,6 +77,7 @@ namespace C3549375_ASE_Assignment
             else if (Command.Equals("reset") == true)
             {
                 Canvas.Reset();
+                Canvas.MoveTo(0,0);
             }
             //This section is for Clear Area
             else if (Command.Equals("clear") == true)

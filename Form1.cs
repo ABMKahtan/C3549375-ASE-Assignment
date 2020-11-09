@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace C3549375_ASE_Assignment
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         //This creates the main canvas
         Bitmap OutputBitmap = new Bitmap(600,600);
         Canvas MainCanvas;
         Commands C;
-        public Form1()
+        public Form()
         {
             InitializeComponent();
             MainCanvas = new Canvas(Graphics.FromImage(OutputBitmap));
@@ -121,6 +121,11 @@ namespace C3549375_ASE_Assignment
                 CommandLineBox.Text = read.ReadToEnd();
                 read.Dispose();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
