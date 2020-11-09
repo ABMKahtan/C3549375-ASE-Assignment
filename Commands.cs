@@ -11,7 +11,6 @@ namespace C3549375_ASE_Assignment
     {
         int[] parameterInts;
         string[] split;
-        string Cmd;
         String[] parameters;
         Canvas Canvas;
         string Command;
