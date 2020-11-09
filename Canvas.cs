@@ -74,5 +74,10 @@ namespace C3549375_ASE_Assignment
             g.Clear(Color.White);
             g.DrawRectangle(Pen, 0, 0, penheight, penlength);
         }
+        //Pen Colours
+        public void pColours(Color color)
+        {
+            Pen = new Pen(color, 2);
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace C3549375_ASE_Assignment
 {
     public partial class Form1 : Form
     {
+        //This creates the main canvas
         Bitmap OutputBitmap = new Bitmap(600,600);
         Canvas MainCanvas;
         Commands C;
@@ -31,7 +33,16 @@ namespace C3549375_ASE_Assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //this is for saving the text to a file
+            SaveFileDialog save = new SaveFileDialog();
 
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter write = new StreamWriter(File.Create(save.FileName));
+
+                write.Write(CommandLineBox.Text);
+                write.Dispose();
+            }
         }
 
         private void CommandLineBox_TextChanged(object sender, EventArgs e)
@@ -78,10 +89,37 @@ namespace C3549375_ASE_Assignment
         {
             if (e.KeyCode == Keys.Enter)
             {
+                //this reads inputed commands and executes them
                 String Input = CommandLine.Text;
                 C.parseCommands(Input);
                 CommandLine.Text = "";
                 Refresh();
+
+                if (Input.Equals("run") == true)
+                {
+                    using (StringReader reader = new StringReader(CommandLineBox.Text))
+                    {
+                        string rtLines;
+                        while ((rtLines = reader.ReadLine()) != null)
+                        {
+                            C.parseCommands(rtLines);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        private void Load_Click(object sender, EventArgs e)
+        {
+            //this is for loading a saved file
+            OpenFileDialog open = new OpenFileDialog();
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader read = new StreamReader(File.OpenRead(open.FileName));
+                CommandLineBox.Text = read.ReadToEnd();
+                read.Dispose();
             }
         }
     }

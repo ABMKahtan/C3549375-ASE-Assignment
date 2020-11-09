@@ -30,8 +30,8 @@
         {
             this.DisplayBox = new System.Windows.Forms.PictureBox();
             this.CommandLineBox = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
+            this.Load = new System.Windows.Forms.Button();
             this.CommandLine = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DisplayBox)).BeginInit();
             this.SuspendLayout();
@@ -39,9 +39,9 @@
             // DisplayBox
             // 
             this.DisplayBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DisplayBox.Location = new System.Drawing.Point(666, 12);
+            this.DisplayBox.Location = new System.Drawing.Point(666, 50);
             this.DisplayBox.Name = "DisplayBox";
-            this.DisplayBox.Size = new System.Drawing.Size(639, 586);
+            this.DisplayBox.Size = new System.Drawing.Size(639, 548);
             this.DisplayBox.TabIndex = 1;
             this.DisplayBox.TabStop = false;
             this.DisplayBox.Click += new System.EventHandler(this.DisplayBox_Click);
@@ -49,9 +49,9 @@
             // 
             // CommandLineBox
             // 
-            this.CommandLineBox.Location = new System.Drawing.Point(12, 12);
+            this.CommandLineBox.Location = new System.Drawing.Point(12, 50);
             this.CommandLineBox.Name = "CommandLineBox";
-            this.CommandLineBox.Size = new System.Drawing.Size(648, 586);
+            this.CommandLineBox.Size = new System.Drawing.Size(648, 548);
             this.CommandLineBox.TabIndex = 3;
             this.CommandLineBox.Text = "";
             this.CommandLineBox.Click += new System.EventHandler(this.CommandLineBox_Click);
@@ -59,24 +59,25 @@
             this.CommandLineBox.TextChanged += new System.EventHandler(this.CommandLineBox_TextChanged);
             this.CommandLineBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CommandLineBox_KeyDown);
             // 
-            // button1
+            // Save
             // 
-            this.button1.Location = new System.Drawing.Point(1106, 602);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Save.Location = new System.Drawing.Point(12, 12);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(94, 32);
+            this.Save.TabIndex = 4;
+            this.Save.Text = "Save File";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // Load
             // 
-            this.button2.Location = new System.Drawing.Point(1209, 602);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 38);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Load.Location = new System.Drawing.Point(112, 12);
+            this.Load.Name = "Load";
+            this.Load.Size = new System.Drawing.Size(94, 32);
+            this.Load.TabIndex = 5;
+            this.Load.Text = "Load File";
+            this.Load.UseVisualStyleBackColor = true;
+            this.Load.Click += new System.EventHandler(this.Load_Click);
             // 
             // CommandLine
             // 
@@ -93,8 +94,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1317, 652);
             this.Controls.Add(this.CommandLine);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Load);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.CommandLineBox);
             this.Controls.Add(this.DisplayBox);
             this.Name = "Form1";
@@ -109,8 +110,8 @@
 
         private System.Windows.Forms.PictureBox DisplayBox;
         private System.Windows.Forms.RichTextBox CommandLineBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button Load;
         private System.Windows.Forms.TextBox CommandLine;
     }
 }
