@@ -12,43 +12,77 @@ namespace C3549375_ASE_Assignment
 {
     public partial class Form1 : Form
     {
-        //SORT OUT SIZING
-        Bitmap OutputBitmap = new Bitmap(,);
-        Canvass MyCanvass;
+        Bitmap OutputBitmap = new Bitmap(600,600);
+        Canvas MainCanvas;
+        Commands C;
         public Form1()
         {
             InitializeComponent();
-            MyCanvass = new Canvass(Graphics.FromImage(OutputBitmap));
+            MainCanvas = new Canvas(Graphics.FromImage(OutputBitmap));
+            C = new Commands(MainCanvas);
         }
 
-        private void CommandLine_KeyDown(object sender, KeyEventArgs e)
+
+        private void DisplayBox_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.DrawImageUnscaled(OutputBitmap, 0, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CommandLineBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CommandLine_KeyDown_1(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void DisplayBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CommandLineBox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void CommandLineBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CommandLineBox_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                //HERE IS WHERE TO SPLIT THE INPUTED TEXT ON FROM THE TEXT BOX.
-                String Command = CommandLine.Text.Trim().ToLower();
-                if (Command.Equals("line") == True)
-                {
-                    MyCanvass.DrawLine(160, 120);
-                }
-                else if (Command.Equals("square") == true)
-                {
-                    MyCanvass.DrawSquare(25);
-                    Console.WriteLine("Line");
-                }
+                String Input = CommandLine.Text;
+                C.parseCommands(Input);
                 CommandLine.Text = "";
                 Refresh();
             }
         }
-
-        private void DisplayBox_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void CommandLine_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-
+}

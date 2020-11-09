@@ -1,0 +1,10 @@
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.csprojAssemblyReference.cache
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375_ASE_Assignment.Form1.resources
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375_ASE_Assignment.Properties.Resources.resources
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.csproj.GenerateResource.cache
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.csproj.CoreCompileInputs.cache
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\bin\Debug\C3549375 ASE Assignment.exe.config
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\bin\Debug\C3549375 ASE Assignment.exe
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\bin\Debug\C3549375 ASE Assignment.pdb
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.exe
+C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.pdb
