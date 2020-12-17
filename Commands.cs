@@ -73,6 +73,13 @@ namespace C3549375_ASE_Assignment
                     Canvas.MoveTo(x, y);
                 }
             }
+           // else if (Command.Equals("loop") == true)
+            //{
+              //  for (int i = 0; i < parameterInts[0] ; i++)
+                //{
+
+            //    }
+            //}
             //This section is for reset
             else if (Command.Equals("reset") == true)
             {
