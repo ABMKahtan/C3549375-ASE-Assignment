@@ -8,3 +8,13 @@ C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\bin\D
 C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.exe
 C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375 ASE Assignment.pdb
 C:\Users\yser\source\repos\C3549375 ASE Assignment\C3549375 ASE Assignment\obj\Debug\C3549375_ASE_Assignment.Form.resources
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375 ASE Assignment.exe
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375 ASE Assignment.pdb
+D:\GitHub\C3549375-ASE-Assignment\bin\Debug\C3549375 ASE Assignment.exe.config
+D:\GitHub\C3549375-ASE-Assignment\bin\Debug\C3549375 ASE Assignment.exe
+D:\GitHub\C3549375-ASE-Assignment\bin\Debug\C3549375 ASE Assignment.pdb
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375 ASE Assignment.csprojAssemblyReference.cache
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375_ASE_Assignment.Form.resources
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375_ASE_Assignment.Properties.Resources.resources
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375 ASE Assignment.csproj.GenerateResource.cache
+D:\GitHub\C3549375-ASE-Assignment\obj\Debug\C3549375 ASE Assignment.csproj.CoreCompileInputs.cache

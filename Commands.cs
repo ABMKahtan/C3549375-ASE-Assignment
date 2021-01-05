@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace C3549375_ASE_Assignment
 {
@@ -59,6 +60,7 @@ namespace C3549375_ASE_Assignment
             else if (Command.Equals("circle") == true)
             {
                 Canvas.DrawCircle(parameterInts[0]);
+                Debug.WriteLine("elseif");
             }
             //This one is for a Triangle
             else if (Command.Equals("triangle") == true)
@@ -73,18 +75,22 @@ namespace C3549375_ASE_Assignment
                     Canvas.MoveTo(x, y);
                 }
             }
-           // else if (Command.Equals("loop") == true)
-            //{
-              //  for (int i = 0; i < parameterInts[0] ; i++)
-                //{
-
-            //    }
-            //}
+            else if (Command.Equals("loop") == true)
+            {
+                for (int i = 0; i < parameterInts[0]; i++)
+                {
+                    if (split[i] == "circle")
+                    {
+                       Canvas.DrawCircle(parameterInts[0]);
+                    }
+                    Debug.WriteLine("this is inside the loop");
+                }
+            }
             //This section is for reset
             else if (Command.Equals("reset") == true)
             {
                 Canvas.Reset();
-                Canvas.MoveTo(0,0);
+                Canvas.MoveTo(0, 0);
             }
             //This section is for Clear Area
             else if (Command.Equals("clear") == true)
@@ -111,6 +117,7 @@ namespace C3549375_ASE_Assignment
                     Canvas.pColours(Color.Yellow);
                 }
             }
+                }
             }
-    }
-}
+        }
+
