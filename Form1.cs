@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace C3549375_ASE_Assignment
 {
@@ -99,11 +102,19 @@ namespace C3549375_ASE_Assignment
                 {
                     using (StringReader reader = new StringReader(CommandLineBox.Text))
                     {
-                        string rtLines;
+                        String rtLines;
+
+                        List<String> allLines = new List<String>();
+                        
                         while ((rtLines = reader.ReadLine()) != null)
                         {
-                            C.parseCommands(rtLines);
+ 
+                           allLines.Add(rtLines);
+                            
+                           // C.parseCommands(rtLines);
                         }
+                        C.parse2(allLines);
+
                     }
 
                 }
