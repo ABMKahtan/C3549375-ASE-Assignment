@@ -94,9 +94,6 @@ namespace C3549375_ASE_Assignment
             {
                 //this reads inputed commands and executes them
                 String Input = CommandLine.Text;
-                C.parseCommands(Input);
-                CommandLine.Text = "";
-                Refresh();
 
                 if (Input.Equals("run") == true)
                 {
@@ -111,13 +108,17 @@ namespace C3549375_ASE_Assignment
  
                            allLines.Add(rtLines);
                             
-                           // C.parseCommands(rtLines);
                         }
                         C.parse2(allLines);
 
                     }
 
                 }
+                else {
+                C.parseCommands(Input);
+                }
+                CommandLine.Text = "";
+                Refresh();
             }
         }
 
